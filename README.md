@@ -34,12 +34,39 @@ Use the methods below to list, subscribe and publish to topics.
 
 * /list
 * Get a list of availalbe topics.
-* Sample request:
+* Sample response:
+<pre>
+```json
+{
+    "ResponseMetadata": {
+        "RequestId": "7e88c51d-9956-5590-8e91-8810fc5ca3db"
+    },
+    "Topics": [
+        {
+            "TopicArn": "arn:aws:sns:us-east-1:546995834981:realtime-business-licenses"
+        },
+        {
+            "TopicArn": "arn:aws:sns:us-east-1:546995834981:realtime-service-requests"
+        }
+    ]
+}
+```
+</pre>
 
 * /subscribe
 * Subscribe to one or more topics.
 * Sample request:
+<pre>
+curl -X POST http://127.0.0.1:4000/subscribe 
+-d '{"url": "http://756ba85d.ngrok.com", "topics": ["realtime-business-licenses"]}' 
+-H 'Content-type: application/json'
+</pre>
 
 * /publish
 * Publish a message to a topic.
 * Sample request:
+<pre>
+curl -X POST http://127.0.0.1:4000/publish 
+-d '{"topic": "realtime-business-licenses", "subject": "Test message", "message":{"foo":"bar"}}'
+-H 'Content-type: application/json' 
+</pre>
