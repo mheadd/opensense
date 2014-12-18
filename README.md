@@ -19,7 +19,7 @@ Realtime data is pushed to registered webhooks using Amazon SNS and is stored in
 * Copy <code>config.sample.js</code> to <code>config.js</code>.
 * Install CouchDB (default config assumes CouchDB is running on default port on localhost).
 * Start realtime server by running <code>node index.js</code> in root directory.
-* Start data consumer by cd'ing into <code>consumer directory</code> and running <code>node index.js</code>.
+* Start data consumer by cd'ing into <code>/consumer</code> directory and running <code>node index.js</code>.
 
 In the Amazon Console:
 
@@ -27,3 +27,19 @@ In the Amazon Console:
 * Create a new topic.
 * Note the prefix on the **Topic ARN** and enter into the <code>config.js</code> file.
 * Enter additional SNS credentials into the <code>config.js</code> file.
+
+Use the methods below to list, subscribe and publish to topics.
+
+## Methods
+
+* /list
+* Get a list of availalbe topics.
+* Sample request:
+
+* /subscribe
+* Subscribe to one or more topics.
+* Sample request:
+
+* /publish
+* Publish a message to a topic.
+* Sample request:
