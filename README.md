@@ -35,7 +35,6 @@ Use the methods below to list, subscribe and publish to topics.
 * /list
 * Get a list of availalbe topics.
 * Sample response:
-<pre>
 ```json
 {
     "ResponseMetadata": {
@@ -43,22 +42,21 @@ Use the methods below to list, subscribe and publish to topics.
     },
     "Topics": [
         {
-            "TopicArn": "arn:aws:sns:us-east-1:546995834981:realtime-business-licenses"
+            "TopicArn": "arn:aws:sns:us-east-1:888888888888:realtime-business-licenses"
         },
         {
-            "TopicArn": "arn:aws:sns:us-east-1:546995834981:realtime-service-requests"
+            "TopicArn": "arn:aws:sns:us-east-1:888888888888:realtime-service-requests"
         }
     ]
 }
 ```
-</pre>
 
 * /subscribe
 * Subscribe to one or more topics.
 * Sample request:
 <pre>
 curl -X POST http://127.0.0.1:4000/subscribe 
--d '{"url": "http://756ba85d.ngrok.com", "topics": ["realtime-business-licenses"]}' 
+-d '{"url": "http://path-to-your-webhook.com", "topics": ["realtime-business-licenses"]}' 
 -H 'Content-type: application/json'
 </pre>
 
