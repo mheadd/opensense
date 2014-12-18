@@ -26,4 +26,4 @@ In the Amazon Console:
 * Navigate to the SNS dashboard.
 * Create a new topic.
 * Note the prefix on the **Topic ARN** and enter into the <code>config.js</code> file.
-* Enter AWS credentials into the <code>config.js</code> file.
+* Enter additional SNS credentials into the <code>config.js</code> file.
