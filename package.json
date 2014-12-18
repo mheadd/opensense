@@ -1,0 +1,15 @@
+{
+  "name": "opensense",
+  "version": "0.0.1",
+  "description": "Realtime open data API",
+  "main": "index.js",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "aws-sdk": "latest",
+    "url-valid": "latest",
+    "cradle": "latest"
+  },
+  "author": "Mark Headd <mheadd@accela.com> (http://developer.accela.com/)",
+  "license": "BSD"
+}
