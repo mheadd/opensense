@@ -32,7 +32,7 @@ Use the methods below to list, subscribe and publish to topics.
 
 ## Methods
 
-* /list
+* http://127.0.0.1:4000/list
 * Get a list of availalbe topics.
 * Sample response:
 ```json
@@ -51,7 +51,7 @@ Use the methods below to list, subscribe and publish to topics.
 }
 ```
 
-* /subscribe
+* http://127.0.0.1:4000/subscribe
 * Subscribe to one or more topics.
 * Sample request:
 <pre>
@@ -60,7 +60,7 @@ curl -X POST http://127.0.0.1:4000/subscribe
 -H 'Content-type: application/json'
 </pre>
 
-* /publish
+* http://127.0.0.1:4000/publish
 * Publish a message to a topic.
 * Sample request:
 <pre>
