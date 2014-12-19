@@ -10,7 +10,7 @@ Realtime data is pushed to registered webhooks using Amazon SNS and is stored in
 
 * Node.js
 * Amazon [Simple Notification Service](http://aws.amazon.com/sns/) (SNS)
-* Apahe CouchDB
+* Apache CouchDB
 
 ## Installing & using
 
